@@ -1,32 +1,234 @@
-body{
-    background-color: #FFCB05;
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400&display=swap');
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: #00274C; 
+    background-color: white; 
     margin: 0;
-    padding: 0;
-    color: #00274C;
+    padding: 0; 
+}
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 h1{
-    font-size: 50px;
-    font-family: 'Courier New';
-    text-align: center;
+    color: #00274C; 
+    font-size: 2rem;
+    margin-bottom: 10px;
 
 }
 h2{
-    font-size: 30px;
-    font-family: 'Lucida Console';
+    color: #00274C; /* U-M maize */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+h3{
+    color: #00274C; 
+    font-size: 1rem;
+    margin-top: 10px;
+}
+section {
+    margin-bottom: 40px;
+}
+main{
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+button {
+    background-color: #FFCB05; /* U-M maize */
+    color: #00274C; /* U-M blue */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    align-self: center;
+}
+button:hover {
+    background-color: #00274C; /* U-M blue */
+    color: #FFCB05; /* U-M maize */
+}
+button:focus{
+    outline: 4px solid;
+}
+
+
+
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    z-index: 1;
+}
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skip a{
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }
+  
+    /*Turn off parallax*/
+    header{
+      background-attachment: initial;
+    }
+  }
+  
+.skip a{
+    position: absolute;
+    top: -40px;
+}
+  
+  
+.skip a:focus{
+    top: 20px;
+  }
+*:focus{
+    outline: 2px solid;
+}
+
+nav li{
+    display:inline;
+    padding-right:20px;
+  
+  }
+  
+nav a{
+    color: black;
+    font-weight: bold;
+
+
+}
+nav{
+    background-color: #FFCB05;
+    padding: 10px 0; 
     text-align: center;
 }
-p{
-    line-height: 25px;
+nav a:hover, nav a:focus{
+    text-decoration: underline;
 }
-img{
-    border: solid 5px #00274C;
-    padding: 10px;
+
+.nav_setup{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center; 
+    justify-items: center; 
+    justify-content: center; 
+    list-style-type: none; 
+    padding: 0 20px;
+    margin: 0;
+
+}
+
+.nav_setup img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+}
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    color: #00274C;
+    box-shadow: 0 6px 20px #FFCB05
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .logo img {
+    max-width: 100%; /* Ensure image scales responsively */
+    margin-bottom: 10px;
+  }
+  
+  .logo p {
+    margin: 0;
+    font-size: 18px; /* Adjust font size as needed */
+  }
+  
+  .contact {
     margin: 20px;
-    border-radius: 0 30px 0 0;
-}
-ul{
-    list-style-type: square;
-    margin-left: 50px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow links to wrap to a new line on smaller screens */
+  }
+  
+  .links a {
+    margin: 0 5px;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+article img{
+    width: 60%;
+    height: auto;
+    margin: 20px;
+    justify-content: center;
     align-items: center;
+    
+}
+/*General formating*/
+
+/*Maize and Blue*/
+.food .kitchen .personal .support{
+    text-align: center; /* Center the text, heading, and paragraph */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.food img, .kitchen img, .personal img, .support img {
+    display: block; /* Treat image as a block element */
+    margin: auto; /* Center the image horizontally */
+    height: auto;
+
+}
+
+.food h3, .food p .kitchen h3, .kitchen p, .personal h3, .personal p, .support h3, .support p {
+    margin: 10px 0; /* Add vertical margin for spacing */
+}
+.food, .kitchen, .personal, .support{
+    background-color: #00274C;
+    color: #FFCB05;
+    align-items: horizontal;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10%;
+}
+.food h3, .kitchen h3, .personal h3, .support h3{
+    color: #FFCB05;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.appointment{
+    
+    text-align: center;
+}
+.appointment button{
+    background-color: #00274C;
+    color: #FFCB05
+}
+#main h1{
+    text-align: center;
+    
+}
+.underline{
+    text-decoration: underline;
 }
