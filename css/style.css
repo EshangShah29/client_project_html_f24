@@ -189,6 +189,7 @@ article img{
 /*General formating*/
 
 /*Maize and Blue*/
+
 .food .kitchen .personal .support{
     text-align: center; /* Center the text, heading, and paragraph */
     padding: 20px; /* Add padding for spacing */
@@ -207,8 +208,12 @@ article img{
 .food, .kitchen, .personal, .support{
     background-color: #00274C;
     color: #FFCB05;
-    align-items: horizontal;
+    display: grid;
+    grid-template-rows: 20% 50% 30%;
+    row-gap: 10px;
+    align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 20px;
     border-radius: 10%;
 }
@@ -223,12 +228,34 @@ article img{
 }
 .appointment button{
     background-color: #00274C;
-    color: #FFCB05
+    color: #FFCB05;
+    margin-bottom: 20px;
 }
 #main h1{
     text-align: center;
+    margin-bottom: -50px;
     
 }
 .underline{
     text-decoration: underline;
 }
+.donate{
+    text-align: center;
+}
+.news{
+    text-align: center;
+}
+.news h3{
+    padding-top: 10px;
+}
+.news img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+
+}
+.news button{
+    margin-top: 20px;
+}
+
