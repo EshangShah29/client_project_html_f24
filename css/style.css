@@ -16,6 +16,7 @@ h1{
     font-size: 2rem;
     margin-bottom: 10px;
     text-align: center;
+    margin-top: 10px    ;
 
 }
 h2{
@@ -337,3 +338,31 @@ article img{
     margin-bottom: 0px;
 }
 
+.dates {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 15px;
+}
+.event1, .event2, .event3, .event4, .event5, .event6, .event7, .event8{
+    background-color: #00274C;
+    color: #FFCB05;
+    padding: 20px;
+
+}
+.event1 u, .event2 u, .event3 u, .event4 u, .event5 u, .event6 u, .event7 u, .event8 u{
+    text-decoration: underline;
+    color: #FFCB05;
+}
+.event1 h3, .event2 h3, .event3 h3, .event4 h3, .event5 h3, .event6 h3, .event7 h3, .event8 h3{
+    color: #FFCB05;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.as{
+    color: #00274C;
+    text-decoration: underline;
+}
+.dates p{
+    margin-bottom: 10px;
+}
