@@ -15,6 +15,7 @@ h1{
     color: #00274C; 
     font-size: 2rem;
     margin-bottom: 10px;
+    text-align: center;
 
 }
 h2{
@@ -231,7 +232,7 @@ article img{
     color: #FFCB05;
     margin-bottom: 20px;
 }
-#main h1{
+.hh{
     text-align: center;
     margin-bottom: -50px;
     
@@ -257,5 +258,82 @@ article img{
 }
 .news button{
     margin-top: 20px;
+}
+.list_index{
+    list-style: circle;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+.mh h3, .ph h3{
+    list-style-type:square;
+    display: list-item;
+    margin-left: 20px;
+}
+.ph img{
+    margin-left: 0%;
+}
+.mh p{
+    margin-left: 40px;
+}
+.mh > p:first-of-type, .ph > p:first-of-type{
+    margin-left: 0;
+}
+.ph figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ph img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.ph figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+#life-outside-classroom {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#life-outside-classroom h2 {
+    font-size: 2rem;
+    color: #00274C;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#life-outside-classroom p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#life-outside-classroom ul {
+    list-style-type: disc;
+    margin: 0 0 20px 20px;
+    padding: 0;
+}
+
+#life-outside-classroom li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#life-outside-classroom li strong {
+    color: #333;
+}
+.Ssp{
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 0px;
 }
 
