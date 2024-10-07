@@ -6,6 +6,12 @@ body {
     margin: 0;
     padding: 0; 
 }
+li{
+    line-height: 1.6;
+}
+p{
+    line-height: 1.8;
+}
 img {
     width: 100%;
     height: auto;
@@ -41,8 +47,8 @@ article {
     margin-bottom: 20px;
 }
 button {
-    background-color: #FFCB05; /* U-M maize */
-    color: #00274C; /* U-M blue */
+    background-color: #00274C; 
+    color:#FFCB05 ;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -52,11 +58,16 @@ button {
     align-self: center;
 }
 button:hover {
-    background-color: #00274C; /* U-M blue */
-    color: #FFCB05; /* U-M maize */
+    background-color: #00274C; 
+    color:#FFCB05; 
 }
 button:focus{
-    outline: 4px solid;
+    color: #00274C;
+    background-color: #FFCB05;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 4px;
+    border-radius: 3px;
 }
 
 
@@ -91,7 +102,12 @@ button:focus{
   
   
 .skip a:focus{
-    top: 20px;
+    color: #FFCB05;
+    background-color: #00274C;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 4px;
+    border-radius: 3px;
   }
 *:focus{
     outline: 2px solid;
@@ -301,7 +317,7 @@ article img{
 
 #life-outside-classroom {
     margin: 20px;
-    font-family: Arial, sans-serif;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
 #life-outside-classroom h2 {
@@ -365,4 +381,72 @@ article img{
 }
 .dates p{
     margin-bottom: 10px;
+}
+.campus_space {
+    padding: 20px;
+
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
+    color: #00274C;
+}
+
+.campus_space ol {
+    counter-reset: list-counter;
+    list-style: none;
+    padding-left: 0;
+}
+
+.campus_space ol li {
+    margin-left: 18px;
+    margin-bottom: 20px;
+    list-style-type: disc;    
+
+}
+
+.campus_space ol li::before {
+
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.campus_space ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.campus_space ul li {
+    margin-bottom: 15px;
+}
+
+.campus_space h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #00274C;
+}
+
+.campus_space p {
+    margin-bottom: 15px;
+}
+
+.campus_space a {
+    color: #00274C;
+    text-decoration: underline;
+}
+
+.campus_space a:hover,
+.campus_space a:focus {
+    color: #FFCB05;
+    background-color: #00274C;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.campus_space :focus {
+    outline: 2px solid #FFCB05;
+    outline-offset: 2px;
 }
