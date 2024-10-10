@@ -469,5 +469,10 @@ article img{
 .active{
     background-color: #00274C;
     color: #FFCB05;
-    padding: 5px;
+    padding: 2px;
+    margin: 2px;
+}
+.active a{
+    color: #FFCB05;
+    text-decoration: underline;
 }
