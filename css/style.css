@@ -466,3 +466,8 @@ article img{
     font-weight: bold;
     background-color: #00274caa;
 }
+.active{
+    background-color: #00274C;
+    color: #FFCB05;
+    padding: 5px;
+}
