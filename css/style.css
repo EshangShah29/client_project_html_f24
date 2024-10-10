@@ -78,6 +78,9 @@ button:focus{
     left: 0;
     padding: 6px;
     z-index: 1;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out; 
+    
 }
   @media screen and (prefers-reduced-motion: reduce){
     html{
@@ -93,16 +96,17 @@ button:focus{
     header{
       background-attachment: initial;
     }
-  }
+}
   
 .skip a{
     position: absolute;
     top: -40px;
 }
-  
-  
+
+
 .skip a:focus{
     color: #FFCB05;
+    top: 20px;
     background-color: #00274C;
     outline: none;
     text-decoration: none;
@@ -122,8 +126,6 @@ nav li{
 nav a{
     color: black;
     font-weight: bold;
-
-
 }
 nav{
     background-color: #FFCB05;
@@ -347,12 +349,7 @@ article img{
 #life-outside-classroom li strong {
     color: #333;
 }
-.Ssp{
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 10px;
-    margin-bottom: 0px;
-}
+
 
 .dates {
     display: grid;
@@ -449,4 +446,23 @@ article img{
 .campus_space :focus {
     outline: 2px solid #FFCB05;
     outline-offset: 2px;
+}
+/* The code below is adapted from https://www.w3schools.com/howto/howto_css_image_text.asp*/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.container img{
+    filter: blur(3px);
+}
+
+.centred{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFCB05;
+    font-weight: bold;
+    background-color: #00274caa;
 }
