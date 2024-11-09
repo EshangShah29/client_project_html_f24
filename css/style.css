@@ -614,6 +614,26 @@ nav a:hover, nav a:focus {
         flex-direction: row;
         justify-content: center;
     }
+    .error-container {
+        padding: 30px;
+        margin: 20px;
+    }
+
+    .error-container h1 {
+        font-size: 4rem;
+    }
+
+    .error-container .emoji {
+        font-size: 4rem;
+    }
+
+    .error-container p {
+        font-size: 1.2rem;
+    }
+
+    footer .logo img {
+        width: 800px;
+    }
         
     
 }
@@ -674,3 +694,17 @@ input[type="submit"]:disabled {
     background-color: #cccccc;
     cursor: not-allowed;
 }
+.emoji {
+    font-size: 5rem;
+    margin: 20px 0;
+}
+
+.error-container {
+    background-color: #00274C;
+    color: #FFCB05;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+}   
