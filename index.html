@@ -123,7 +123,7 @@
         </div>
       
         <div class="copyright">
-          © Copyright 2024 Regents of the University of Michigan
+          © Copyright <span id="year"></span> Regents of the University of Michigan
         </div>
       
         <div class="contact">
@@ -139,7 +139,11 @@
           <a href="https://umich.qualtrics.com/jfe/form/SV_9RAiBJITFVOxkHz">Provide Feedback</a> |
           <a href="https://www.si.umich.edu/about-umsi/media-center">Media Center</a>
         </div>
+        
       </footer>
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
 </body>
 </html>
