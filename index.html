@@ -14,17 +14,26 @@
     <header>
         
         <nav>
-            <div >
-                <ul class="nav_setup">
-                    <li><a href = "index.html" class="active">Home</a></li>
-                    <li><a href = "fall-2024-important-dates.html">Dates</a></li>
-                    <li><a href="maizeblue.html">Maize Blue</a></li>
-                    <li><a href="study_space.html">Study Spaces</a></li>
-                    <li><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"></li>
-                </ul>
-
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <ul class="nav_setup">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="fall-2024-important-dates.html">Dates</a></li>
+                <li><a href="maizeblue.html">Maize Blue</a></li>
+                <li><a href="study_space.html">Study Spaces</a></li>
+                <li><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="umsi-logo"></li>
+            </ul>
         </nav>
+        
+        <script>
+            function toggleMenu() {
+                const nav = document.querySelector('.nav_setup');
+                nav.classList.toggle('active');
+            }
+        </script>
         <div class="container">
             <img src="images/home_image.png" alt="northQuad photo">
             <h1 class="centred">Student Success Portal</h1>

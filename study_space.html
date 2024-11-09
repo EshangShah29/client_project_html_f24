@@ -13,17 +13,26 @@
     </div>
     <header>
         <nav>
-            <div >
-                <ul class="nav_setup">
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "fall-2024-important-dates.html">Dates</a></li>
-                    <li><a href="maizeblue.html">Maize Blue</a></li>
-                    <li class="active"><a href="study_space.html">Study Spaces</a></li>
-                    <li><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"></li>
-                </ul>
-
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <ul class="nav_setup">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fall-2024-important-dates.html">Dates</a></li>
+                <li><a href="maizeblue.html">Maize Blue</a></li>
+                <li><a href="study_space.html"class="active">Study Spaces</a></li>
+                <li><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="umsi-logo"></li>
+            </ul>
         </nav>
+        
+        <script>
+            function toggleMenu() {
+                const nav = document.querySelector('.nav_setup');
+                nav.classList.toggle('active');
+            }
+        </script>
         <div class="container">
             <img src="images/image.png" alt="northQuad photo">
             <h1 class="centred">Study Space</h1>
@@ -32,7 +41,7 @@
 
     </header>
     <main id="main">
-        <h1>How to Reserve <br>Study Space:</h1>
+        <h1>How to Reserve Study Space:</h1>
         <section class="campus_space">
             <h2>Follow the steps to reserve the study spaces</h2>
 
@@ -56,6 +65,22 @@
                     You might need this to check in.
                 </li>
             </ol>
+            <h2>Reservation Form</h2>
+            <form action="/submit-reservation" method="POST">
+                <label for="umid">UMID:</label><br>
+                <input type="text" id="umid" name="umid" required><br><br>
+    
+                <label for="first-name">First Name:</label><br>
+                <input type="text" id="first-name" name="first-name" required><br><br>
+    
+                <label for="reservation-date">Reservation Date:</label><br>
+                <input type="date" id="reservation-date" name="reservation-date" required><br><br>
+    
+                <label for="reservation-time">Reservation Time:</label><br>
+                <input type="time" id="reservation-time" name="reservation-time" required><br><br>
+    
+                <input type="submit" value="Reserve Space">
+            </form>
             <h2>How To Cancel Your Reservation</h2>
             <p>At the bottom of your reservation confirmation email, look for <b>"To cancel this booking"</b> and follow the link. You’ll need to log back into the system, and you will have the option to cancel an individual or all reservations.</p>
             
@@ -83,7 +108,7 @@
                 </ul>
             <h2>Need Help?</h2>
             <p>
-                For technical help with the Study Spaces at U-M tool, contact the <a href="https://its.umich.edu/help"> ITS Service Center</a>. <br> <br>
+                For technical help with the Study Spaces at U-M tool, contact the <a href="https://its.umich.edu/help"> ITS Service Center</a>.
                 For help about a specific space, reach out to the local building contact listed for your space.
             </p>
         </section>

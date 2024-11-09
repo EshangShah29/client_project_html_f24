@@ -13,17 +13,26 @@
     </div>
     <header>
         <nav>
-            <div >
-                <ul class="nav_setup">
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "fall-2024-important-dates.html">Dates</a></li>
-                    <li class="active"><a href="maizeblue.html" >Maize Blue</a></li>
-                    <li><a href="study_space.html">Study Spaces</a></li>
-                    <li><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"></li>
-                </ul>
-
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <ul class="nav_setup">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fall-2024-important-dates.html">Dates</a></li>
+                <li><a href="maizeblue.html "class="active">Maize Blue</a></li>
+                <li><a href="study_space.html">Study Spaces</a></li>
+                <li><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class="umsi-logo"></li>
+            </ul>
         </nav>
+        
+        <script>
+            function toggleMenu() {
+                const nav = document.querySelector('.nav_setup');
+                nav.classList.toggle('active');
+            }
+        </script>
         <div class="container">
             <img src="images/grocerybag.png" alt="grocerybag with potatoes, apples, avocado, sardough bread, brocoli, parsely">
             <h1 class="centred">Welcome to Maize & Blue Cupboard</h1>
@@ -60,33 +69,35 @@
             Read our <a href="https://mbc.studentlife.umich.edu/faq/" class="underline"> FAQs</a> to learn more about the Maize and Blue Cupboard and how you can get help.
             </p>
             <br>
-            <h2>WHAT WE PROVIDE</h2>            
-            <article class="food">
-                <h3>FOOD</h3>
-                <img src="images/food.png" alt="grocery bag">
-                <p>Produce, dairy, meat, bread, frozen and shelf-stable foods (i.e. rice, cans, tuna, etc.)</p>
-            </article>
-
-            <article class="kitchen">
-                <h3>KITCHEN AND COOKING</h3>
-                <img src="images/kitchen.png" alt="a vessel with steam coming">
-                <p>Dishes, silverware, pots & pans, Tupperware, cutting boards, knives, and other kitchenware
-
-                </p>
-            </article>     
-            <article class="personal">
-                <h3>PERSONAL AND HOUSEHOLD</h3>
-                <img src="images/personal.png" alt="bottle with bubbles indicating household">
-                <p>Trash bags, toilet paper, cleaning supplies, hygiene products, school supplies, baby items and more
-
-                </p>
-            </article> 
-            <article class="support">
-                <h3>SUPPORT</h3>
-                <img src="images/support.png" alt="heart showing support">
-                <p>Get connected to campus experts like CAPS, Dean of Students and Financial Aid, as well as SNAP (Michigan’s food program) and other community resources
-                </p>
-            </article>        
+            <h2>WHAT WE PROVIDE</h2> 
+            <section class="provide">
+                <article class="food">
+                    <h3>FOOD</h3>
+                    <img src="images/food.png" alt="grocery bag">
+                    <p>Produce, dairy, meat, bread, frozen and shelf-stable foods (i.e. rice, cans, tuna, etc.)</p>
+                </article>
+    
+                <article class="kitchen">
+                    <h3>KITCHEN AND COOKING</h3>
+                    <img src="images/kitchen.png" alt="a vessel with steam coming">
+                    <p>Dishes, silverware, pots & pans, Tupperware, cutting boards, knives, and other kitchenware
+                    </p>
+                </article>     
+                <article class="personal">
+                    <h3>PERSONAL AND HOUSEHOLD</h3>
+                    <img src="images/personal.png" alt="bottle with bubbles indicating household">
+                    <p>Trash bags, toilet paper, cleaning supplies, hygiene products, school supplies, baby items and more
+    
+                    </p>
+                </article> 
+                <article class="support">
+                    <h3>SUPPORT</h3>
+                    <img src="images/support.png" alt="heart showing support">
+                    <p>Get connected to campus experts like CAPS, Dean of Students and Financial Aid, as well as SNAP (Michigan’s food program) and other community resources
+                    </p>
+                </article>
+            </section>           
+                    
 
         </section>
         <section>
@@ -99,11 +110,7 @@
             <article class="news">
                 <img src="images/news_3.jpg" alt="for decoration only">
                 <br>
-                <h3>Mobile Distribution for North Campus — Fall 2023 Semester</h3>
-                <p>From modest beginnings, to a campus staple.</p>
                 <button onclick="window.location.href='https://mbc.studentlife.umich.edu/2024/03/13/from-students-for-students-the-maize-and-blue-cupboard/'">More News</button>
-                
-
             </article>
             
         </section>
