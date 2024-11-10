@@ -11,11 +11,11 @@
 <body>
   <header>
     <nav>
-      <div class="menu-toggle" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
+      <button class="menu-toggle" tabindex="0" onclick="toggleMenu()" onkeydown="handleKey(event)" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>    
       <ul class="nav_setup">
           <li><a href="index.html">Home</a></li>
           <li><a href="fall-2024-important-dates.html">Dates</a></li>
@@ -26,22 +26,29 @@
   </nav>
   
   <script>
-      function toggleMenu() {
-          const nav = document.querySelector('.nav_setup');
-          nav.classList.toggle('active');
-      }
-  </script>
+    function toggleMenu(event) {
+        const nav = document.querySelector('.nav_setup');
+        // Check if the event is a click or a keyboard event with Enter or Space
+        if (event.type === 'click' || event.key === 'Enter' || event.key === ' ') {
+            nav.classList.toggle('active');
+            event.preventDefault(); // Prevents default action, especially for Space key
+        }
+    }
+      const menuToggle = document.querySelector('.menu-toggle');
+      menuToggle.addEventListener('click', toggleMenu);
+      menuToggle.addEventListener('keydown', toggleMenu); // Allows Space or Enter to activate
+    </script>
   </header>
   <main>
     <body>
       
       <div class="error-container">
-          <h1>404</h1>
+          <h1>Error 404</h1>
           <div class="emoji">🤷‍♂️</div>
           <p>Oops! Looks like you took a wrong turn. This page is lost in the digital abyss!</p>
           <p>Don't worry, though – there's always a way back.</p>
           <div class="button-container">
-              <a href="/">Return to Home Page</a>
+              <a href="index.html"><u>Return to Home Page</u></a>
           </div>
       </div>
     </body>        

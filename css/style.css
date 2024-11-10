@@ -518,13 +518,18 @@ nav a:hover, nav a:focus {
     flex-direction: column;
     cursor: pointer;
     width: 30px;
+    background: none; 
+    border: none;     
+    padding: 0;       
 }
 
 .menu-toggle span {
-    background: black;
-    height: 3px;
-    margin: 4px 0;
-    transition: 0.4s;
+    display: block;
+    height: 4px;           
+    width: 100%;          
+    background-color: #00274C; 
+    margin: 5px 0;         
+    border-radius: 2px;    
 }
 .umsi-logo {
     position: absolute;
@@ -638,6 +643,11 @@ nav a:hover, nav a:focus {
     
 }
 
+.error-container h1{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
 input, button {
     font-size: 1rem;
 }
@@ -705,6 +715,15 @@ input[type="submit"]:disabled {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    display: inline-block;
     text-align: center;
+    justify-content: center;
+
 }   
+.button-container a{
+    /*Underline self*/
+    text-decoration: underline;
+    
+}
+form :placeholder-shown{
+    color: #00274C;
+}

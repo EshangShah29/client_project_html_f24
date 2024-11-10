@@ -13,11 +13,11 @@
     </div>
     <header>
         <nav>
-            <div class="menu-toggle" onclick="toggleMenu()">
+            <button class="menu-toggle" tabindex="0" onclick="toggleMenu()" onkeydown="handleKey(event)" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button> 
             <ul class="nav_setup">
                 <li><a href="index.html" >Home</a></li>
                 <li><a href="fall-2024-important-dates.html"class="active">Dates</a></li>
@@ -28,10 +28,18 @@
         </nav>
         
         <script>
-            function toggleMenu() {
+            function toggleMenu(event) {
                 const nav = document.querySelector('.nav_setup');
-                nav.classList.toggle('active');
+                
+                // Check if the event is a click or a keyboard event with Enter or Space
+                if (event.type === 'click' || event.key === 'Enter' || event.key === ' ') {
+                    nav.classList.toggle('active');
+                    event.preventDefault(); // Prevents default action, especially for Space key
+                }
             }
+              const menuToggle = document.querySelector('.menu-toggle');
+              menuToggle.addEventListener('click', toggleMenu);
+              menuToggle.addEventListener('keydown', toggleMenu); // Allows Space or Enter to activate
         </script>
         <div class="container">
             <img src="images/northQuad.jpg" alt="northQuad photo">
